@@ -45,7 +45,7 @@ class MessageService : Service() {
 
     private val mBinder = object : MessageSender.Stub() {
         override fun sendMessage(messageModel: MessageModel?) {
-            Log.i(TAG, "messageModel:$messageModel")
+            Log.i(TAG, "sendMessage messageModel:$messageModel")
         }
 
         override fun registerReceiverListener(receiver: MessageReceiver) {
